@@ -1,0 +1,540 @@
+html {
+    /* este es para que reaccionen bien los nmargin width y padding
+    cuando los aplicamos en la pag */
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+/* reseta el codigo y aplica bien los padding margin y width
+siempre se debe colocar en las pag que realicemos */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* darle estylos a todo lo que esta dentro del body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+.cursiva{
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+text-align: center;
+margin: 0 auto !important;
+}
+.letra{
+    color: #ffffff;
+}
+/** Globales **/
+
+/* esta es muy importante se utliza en todos los proyectos
+le da el tamaño a la imagen de manera correcta para que se vea en la 
+pagina y se adapte a los styos que l estemos dando */
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 120rem; /** = 1200px; **/
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+.verde{
+    color: rgb(153, 248, 11);
+}
+.fondo-naranja{
+    background: #DE423A;
+
+}
+.menu__link--select{
+    background: #DE423A;
+
+}
+.flex{
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.fijo{
+    width: 100%;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    z-index: 40000;
+}
+
+.direccion{
+    width: 100%;
+    background-color: rgba(20, 17, 17, 0.558);
+    padding: 15px;
+    text-align: center;
+    font-weight: 100;
+    color: #ffffff;
+    position: absolute;
+    top: 145px;
+}
+@media(min-width:359px){
+    .direccion{
+        top: 140px;
+    } 
+}@media(min-width: 480px){
+    .direccion{
+        top: 148px;
+    } 
+}
+/* .direccion{
+    top: 160px;
+}
+} */
+.logo .primero{
+    color: rgb(241, 133, 18);
+}
+.logo{
+    color: rgb(140, 218, 101);
+    font-size: 0.9em;
+    font-weight: 300;
+    font-family: 'Pacifico', cursive;
+}
+@media(min-width: 480px){
+    .logo{
+font-size: 1.4em;
+    } 
+}
+@media(min-width:512px){
+    .logo{
+        font-size: 1.5em;
+    }
+}
+.logo p{
+    font-weight: 100;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0;
+}
+header .flex{
+    /* para que no se valla para abajo */
+    flex-wrap: nowrap;
+}
+
+.info-numero{
+    width: 100%;
+    display: block;
+color: rgb(153, 248, 11);
+font-size: 1em;
+margin-left: 40px;
+text-align: right;
+transition: all 0.9s;
+}
+@media(min-width:480px){
+    .info-numero{
+        margin-top: 7px;
+    }
+}
+@media(min-width:512px){
+    .info-numero{
+        margin-top: 12px;
+    }
+}
+.icon-whatsapp:hover{
+    transform: scale(1.2) !important;
+}
+.info{
+    background: -webkit-linear-gradient(yellow, blue, red);
+    padding: 30px;
+    margin-top: -30px;;
+}
+.main-nav{
+    width: 100%;
+    position: relative;
+    background: #000000;
+    padding: 10px;
+    /* margin-top: 5px; */
+    align-items: center;
+    line-height: 1.7;
+
+}
+
+.icon-menu{
+    display: block;
+    color: #ffffff;
+    font-size: 1.4em;
+    transition: all .8s;
+}
+
+.icon-menu:hover{
+    transform: scale(1.2);
+}
+.social-icon [class*="icon-"]::before{
+    position: relative;
+    color: #ffffff;
+    right: 1px;
+    font-size: 1.2em;
+    border: none; 
+    align-items: center;
+    line-height: 2;
+    transition: all 0.9s;
+}
+.social-icon span:hover{
+    display: inline-block;
+    transform: scale(1.2) !important;
+}
+
+@media(min-width: 512px){
+    .main-nav{
+        width: 100%;
+    }
+}
+
+.menu{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    text-align: center;
+    background: #000000;
+height: 0;
+overflow: hidden;
+transition: height .4s linear;
+z-index: 2000;
+}
+
+@media(min-width: 600px){
+    .icon-menu{
+        display: none;
+    }
+     .main-nav .menu{
+        
+        position: absolute !important;
+width: 100% !important;
+            display: flex !important;
+            
+            height: auto !important;
+            transform: translateX(50%) !important;
+            top: 10px !important;
+left: 30px !important;
+    height: auto !important;
+    text-align: right !important;
+    font-size: 1em !important;
+    
+     } 
+     
+} 
+
+
+ .menu .menu__link{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 5px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+transition: height .4s linear;
+}
+.menu .menu__link:hover{
+    background: #DE423A;
+}
+.mostrar{
+    height: 145px;;
+}
+
+
+#c-slider{
+    margin: auto;
+       width: 100%;
+        position: relative;
+    top: 140px;
+    padding: 0;
+    margin: 32px 0 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px yellow,
+                /* para darle una sombra */
+    0 15px 15px;
+    }
+    @media(min-width:269px){
+        #c-slider{
+            top: 130px;
+
+        }
+    }
+    @media(min-width:359px){
+        #c-slider{
+            top: 125px;
+
+        }
+    }
+    #slider{
+    display: flex;
+    /* depende de las imagens que tengamos */
+width: 400%;
+}
+#c-slider::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+section{
+    width: 100%;
+}
+
+#slider section img{
+    display: block;
+    width: 100%;
+    height: 250px !important;
+    max-height: 500px;
+   object-fit: cover;
+}
+
+#btn-prev, #btn-next{
+    width: 30px !important;
+    height: 30px !important;
+    background: rgb(255, 255, 255, 0.7);
+    position: absolute;
+    top: 50% !important;
+    /* para que queden centrados */
+    transform: translateY(-50%);
+    line-height: 30px !important;
+font-size: 50px;
+font-weight: bold;
+text-align: center;
+border-radius: 50%;
+font-family: monospace;
+cursor: pointer;
+}
+
+
+/* botones para adelantar retroceder */
+#btn-prev, #btn-next{
+width: 40px;
+height: 40px;
+background: rgb(255, 255, 255, 0.7);
+position: absolute;
+top: 50%;
+/* para que queden centrados */
+transform: translateY(-50%);
+line-height: 40px;
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+border-radius: 50%;
+font-family: monospace;
+cursor: pointer;
+z-index: 1100;
+}
+
+#btn-prev:hover, #btn-next:hover{
+    background: rgba(255, 255, 255, 1);
+}
+
+#btn-prev{
+    left: 10px;
+}
+#btn-next{
+    right: 10px;
+}
+
+.banner{
+position: absolute;
+top: 42%;
+color: #ffffff;
+z-index: 1000;
+}
+.principal{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.3em !important;
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+@media(max-width: 268px){
+    .direccion{
+        font-size: 0.9em;
+        top: 156px;
+    }
+}
+
+@media(min-width: 400px){
+    .principal{
+        font-size: 1.7em !important;
+        padding: 15px 0;
+    }
+}
+@media(min-width: 600px){
+    .principal{
+        font-size: 1.9em !important;
+        padding: 5% 0;
+
+    }
+}
+.banner .titulo{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+font-size: 13m;
+}
+@media(min-width: 372px){
+    .banner .titulo{
+        font-size: 1.4em;
+
+    }
+    
+}
+@media(min-width: 400px){
+    .banner .titulo{
+        font-size: 1.em;
+    }
+    
+}
+@media(min-width: 600px){
+    .banner .titulo{
+        font-size: 1.4em !important;
+
+    }
+}
+
+@media(min-width: 600px){
+.column--50-25{
+    width: 49%;
+    margin: 0 auto !important;
+    padding: 0;
+}
+.galeria_img{
+    display: block;
+    width: 250px !important;
+    height: 250px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    object-fit: cover;
+    border-radius: 0px !important;
+    text-align: center;
+    border: 4px solid yellow;  
+}
+.column--50-25 .tema{
+display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
+    font-size: 1em;
+}
+}
+
+
+.galeria{
+    width: 100%;
+    margin-top: 170px;
+    background: -webkit-radial-gradient(rgb(231, 151, 151), rgb(45, 243, 45), rgb(55, 55, 243)); /* Safari 5.1 to 6.0 */
+}
+.fondo-naranja{
+    padding: 10px;
+    margin: 20px 0 !important;
+}
+
+.titulo_galeria{
+font-size: 1.3em;
+text-align: center;
+}
+
+ .galeria .galeria_img{
+     display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    object-fit: cover;
+    border-radius: 50%;
+    text-align: center;
+    border: 4px solid yellow;  
+} 
+.tema{
+    text-align: center;
+    font-size: 0.8em;
+    margin: 10px 0 20px 0;
+}
+.footer{
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10p0 10px 0x;
+}
+footer .flex{
+    flex-wrap: nowrap;
+}
+ .footer .logo{
+    width: 100%;
+    margin: 10px;
+    text-align: left;
+font-weight: 100;
+font-size: 1em;
+}
+@media(min-width:480px){
+    .footer .logo{
+        font-size: 1.2em;
+    }
+}
+.footer .info-numero {
+    width: 40%;
+    margin: 0;
+    margin-top: 70% !important;
+
+}
+.footer .delgada{
+    margin: 0 0 20px 0;
+    font-weight: 100;
+    font-size: 0.8em;
+
+}
+.footer .copy{
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    margin-bottom: 10px;
+}
+@media(min-width:480px){
+    .footer .copy{
+        font-size: 0.8em;
+    }
+}
+.footer .social-icon [class*="icon-"]::before{
+    color: #000000;
+    right: 1px;
+    font-size: 1.2em;
+    border: none; 
+    align-items: center;
+    line-height: 2;
+    margin: 0;
+}
+.logo .social-icon [class*="icon-"]::before{
+    margin-right: 15px;
+}
+
+.footer .centrar .social-icon [class*="icon-"]::before{
+font-size: 1.6em !important;
+
+}

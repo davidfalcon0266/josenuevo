@@ -1,0 +1,234 @@
+.registro .titulo_galeria{
+    display: block;
+    color: black;
+    margin-top: 50%;
+}
+
+.rela{
+    margin-top: -18px;;
+}
+
+
+
+
+.registro label {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.caja {
+    width: 100% !important;
+    margin: 20px 0;
+	background-color: rgb(255, 254, 254);
+	border: 1px solid #fccccc;
+	padding: 20px;
+}
+
+.campo {
+	margin: 10px;
+}
+
+.campo label{
+    font-size: 0.7em;
+    padding-right: 100%;
+}
+
+.campo input{
+    width: 100%;
+    font-size: 0.7em;
+
+}
+.Registro .column{
+    display: block;
+    width: 50%;
+    margin: 0 auto !important;
+}
+
+@media(max-width:480px){
+    .Registro .column{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.reservaciones .principal{
+    margin-top: 50px;
+}
+@media(min-width:400px){
+    .reservaciones .principal{
+        margin-bottom: 50px;
+    } 
+}
+
+.reservaciones .img-fondo{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+.paquetes{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(04, 04, 04, 0.3)
+}
+
+.paquetes h3{
+    font-size: 1.2em;
+color: #DE423A;
+padding: 0 0 20px 0;
+margin-top: 10px;
+}
+
+.tabla-precio{
+    width: 100%;
+
+    background: #ffffff;
+    border: 1px solid black;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.tabla-precio .sub{
+    font-size: 0.9em !important;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.costo{
+text-align: center;
+color: #DE423A;
+padding: 10px;
+}
+
+.servicio{
+    font-size: 0.9em !important;
+    text-align: center;
+    color: black;
+    margin: 10px 0 0 0; 
+
+}
+
+.servicios{
+line-height: 20px;
+    padding: 0;
+    list-style:none;
+}
+
+.trabajos{
+    font-size: 0.8em;
+    text-align: center;
+}
+.orden{
+    background: rgba(01, 01, 01, 0.5);
+    padding: 5px;
+    width: 70%;
+    margin: 0 auto;
+
+}
+.orden label{
+    text-align: center;
+    font-size: 0.8em;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.orden input{
+    width: 80%;
+    font-size: 0.7em;
+}
+
+#error{
+    margin-bottom: 10px;
+    background: #DE423A;
+    color: #ffffff;
+}
+
+
+@media(min-width:400px){
+   
+    .tabla-precio{
+        width: 49.5%;
+        background: #ffffff;
+        border: 1px solid black;
+        padding: 4px;
+        margin: 15px 0;
+    }
+}
+
+
+
+@media(min-width:660px){
+   
+    .tabla-precio{
+        width: 33%;
+      
+    }
+}
+
+.todo{
+
+flex-direction: column !important;
+align-items: center;
+color: #DE423A;
+font-size: 1.3em;
+}
+
+.boton{
+    display: block;
+border-radius: 10px;
+border: none;
+background: #DE423A;
+color: #ffffff;
+padding: 5px 10px;
+font-weight: 100;
+ transition: all 0.5s;
+}
+.boton:hover{
+    transform: scale(.9);
+    border: 2px solid black;
+}
+
+#pagar{
+    font-size: 1em !important;
+    margin-top: 10px;
+
+}
+#productos, #total{
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: -20px 0 0px 0;
+    font-size: 0.7em;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+
+}
+.todo p{
+    padding: 0;
+    margin: 15px 0 25px 0;
+}
+
+@media(min-width:660px){
+    .todo{
+        flex-direction: row !important;
+        align-items: baseline;
+    }
+}
+
+.btn .boton{
+margin: 0 auto;}
+
+
+.reservaciones #c-slider{
+    top: 170px;
+}
+
+
+
+
+
+
+
+
+

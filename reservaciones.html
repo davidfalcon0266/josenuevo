@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico&display=swap" rel="stylesheet">
+
+    <script src="/script/jquery.js"></script>
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/fontello.css">
+    <link rel="stylesheet" href="/css/stylos.css">
+    <link rel="stylesheet" href="/css/reservaciones.css">
+
+
+
+    <title>Peluqueria Canina</title>
+</head>
+<body>
+
+    
+       
+
+<header class="fijo">
+  <div class="flex info">
+        <div class="contenedor logo"><span class="primero">Jos</span>Dav <p class="delgada">Peluqueria Canina</p> </div>
+       
+      <div class="info-numero">   
+        <div class="icon-whatsapp" class="numero"> +56 9 4349 0604</div>
+      </div>
+   </div> 
+
+
+   
+   <nav class="main-nav">
+        <div class="contenedor flex">
+            <span class="icon-menu" id="btnmenu"></span>
+      
+            <ul class="menu"  id="menu">
+                <li  class="menu__item" ><a  href= "/"  class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="reservaciones.html" class="menu__link menu__link--select">Reservaciones</a></li>
+                <li class="menu__item"><a href="productos.html" class="menu__link">Productos</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">galeria</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href=""><span class="icon-facebook"></span></a>
+                <a href=""><span class="icon-twitter"></span></a>
+                <a href=""><span class="icon-mail"></span></a>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div class="direccion">
+            <div class="icon-map-pin">La Marina 1400, San Miguel</div>
+        </div>
+
+        
+<section class="reservaciones seccion">
+    <div id="c-slider">
+        <img class="img-fondo" src="/img/fondo-galeria.png" alt="">
+    </div>
+</section>
+
+
+
+
+
+<section class="reservaciones banner">
+<h1 class="principal">Suscribete</h1>
+<p class="verde titulo">elige tus servicios</p>
+</section>
+
+<section class="galeria">
+ <h2 class="cursiva fondo-naranja letra titulo_galeria">Registrate</h2>
+
+ <div class="Registro contenedor flex ">
+    <div class="column">
+      <form id="registro" class="registro" action="index.html" method="POST">
+        <div id="datos_usuario" class="registro caja clearfix">
+            <div class="campo">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name ="Nombre" size="13" placeholder="Tu Nombre">
+     </div>
+            <div class="campo clearfix">
+                    <label for="Apellido"> Apellido: </label>
+                    <input type="text" id="Apellido" name ="Apellido"size="13" placeholder="Tu Apellido">
+             </div>
+                <div class="campo clearfix">
+                        <label for="email"> Email: </label>
+                        <input type="email" id="email" name ="email"size="13" placeholder="Tu Email">
+                 </div>
+                    <div id="error"></div>
+                    <div class="btn">
+                        <button class="boton" id="boton">Enviar</button>
+                    </div>
+      </form>
+                    </div>
+
+                </section>
+
+
+            <section class="paquetes" id="paquetes">   
+            <h3 class="cursiva">Elige el servicio que prefieres</h3>
+     <div class="flex">
+         <div class="tabla-precio">
+              <h3 class="sub">Tamaño pequeño</h3>
+                 <p class="cursiva costo">$15.000</p>
+                                   
+                    <h4 class="cursiva servicio">Servicios</h4>
+                                    
+                        <ul class="servicios">
+                            <li class="trabajos">Baño</li>
+                            <li class="trabajos">Limpieza oidos y glandulas</li>
+                            <li class="trabajos">Corte de uñas</li>
+                            <li class="trabajos">Limpieza de plantares</li>
+                            <li class="trabajos">Desenrredado</li>
+                            <li class="trabajos">Corte</li>
+                        </ul>
+
+                        
+                        <div class="orden">
+                          <label for="pequeño" class="cursiva"> Cantidad: </label>
+                          <input type="number" id="pequeño" min="0" size="3" placeholder="0">
+                        </div>                     
+             </div>
+                               
+        
+            <div class="tabla-precio">
+              <h3 class="sub">Tamaño Mediano</h3>
+                <p class="cursiva costo">$22.000</p>
+                                     
+                     <h4 class="cursiva servicio">Servicios</h4>
+                      <ul class="servicios">
+                         <li class="trabajos">Baño</li>
+                         <li class="trabajos">Limpieza oidos y glandulas</li>
+                         <li class="trabajos">Corte de uñas</li>
+                         <li class="trabajos">Limpieza de plantares</li>
+                         <li class="trabajos">Desenrredado</li>
+                        <li class="trabajos">Corte</li>
+                      </ul>
+                  <div class="orden">
+                   <label for="mediano" class="cursiva"> Cantidad: </label>
+                   <input type="number" id="mediano" min="0" size="3" placeholder="0">
+                 </div>                     
+             </div>
+        
+            <div class="tabla-precio">
+                  <h3 class="sub">Tamaño Grande</h3>
+                    <p class="cursiva costo">$34.000</p>
+                                    
+                    <h4 class="cursiva servicio">Servicios</h4>
+                <ul class="servicios">
+                      <li class="trabajos">Baño</li>
+                      <li class="trabajos">Limpieza oidos y glandulas</li>
+                     <li class="trabajos">Corte de uñas</li>
+                    <li class="trabajos">Limpieza de plantares</li>
+                     <li class="trabajos">Desenrredado</li>
+                     <li class="trabajos">Corte</li>
+                </ul>
+                  <div class="orden">
+                     <label for="grande" class="cursiva"> Cantidad: </label>
+                      <input type="number" id="grande" min="0" size="3" placeholder="0">
+                 </div>
+              </div>
+                             
+            </div>
+
+     </div> </br>
+    
+    
+     <div class="todo cursiva flex">
+            <input type="button" id="calcular" class="boton" value="Calcular">
+<div class="productos">
+         <p>Productos</p>
+<div id="productos"></div>
+</div>
+<div class="total">
+<p>Total</p>
+<div id="total"></div> 
+</div>
+<input type="button" id="pagar" class="boton" value="Pagar">
+
+<div id="pagar"></div> 
+</div> 
+</section>  
+
+                              
+
+
+<footer class="footer">
+    <div class="contenedor flex">
+        <div class="logo">
+            <span class="primero">Jos</span>Dav <p class="delgada">Peluqueria Canina</p>
+            <p class="copy">&copy; Copyright 2019 | Todos los derechos reservados</p>
+        
+          <div class="social-icon">
+                    <a href="https://www.facebook.com/giliath.balbas/about?lst=1117107663%3A1117107663%3A1563733729" class="social-icon__link"><span class="icon-facebook"></span></a>
+                    <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                    <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+           </div>
+        </div>
+        <div class="centrar">
+            <div class="info-numero  social-icon">   
+                <div  class="icon-whatsapp"></div>
+                <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+            </div>
+            </div>
+</div>
+</footer>
+
+
+
+
+<script src="/script/script.js"></script>
+</body>
+</html>

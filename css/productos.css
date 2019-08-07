@@ -1,0 +1,147 @@
+
+
+.img-fondo{
+width: 100%;
+height: auto;
+max-height: 300px;
+object-fit: cover;
+}
+#c-slider::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.productos{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+}
+@media(min-width:480px){
+    .productos{
+width: 49%;   
+ }
+ .galeria .galeria_img{
+     display: block;
+     width: 100%;
+ }
+}
+
+.productos .tema{
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 0.8em;
+margin: 0 auto !important;
+    color: #ffffff !important;
+    background: #DE423A;
+    padding: 10px;
+}
+    
+@media(min-width:600px){
+    .productos{
+width: 24%;  
+padding-top: 20px !important;
+ }
+ .galeria .galeria_img{
+    display: block;
+    max-width: 110px !important;}
+
+ .productos .tema{
+     width: 100% !important;
+     background: none !important;
+     color: #000000 !important;
+     padding: 20px 0 !important;
+ }
+}
+   
+.galeria .galeria_img{
+    display: block !important;
+    width: 180px;
+    max-width: 300px;
+    height: 180px !important;
+    max-height: 180px;
+    margin: 0 auto !important;
+    padding: 20px;
+    border-radius: 0%;
+    border: 1px solid rgba(14, 7, 7, 0.5);
+    
+}
+
+.productos .tema{
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 10px 0 20px 0;
+    color: #000000;
+    
+}
+
+.modal{
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+display: none;
+}
+.modal--content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    .modal__img{
+        width: 50%;
+
+    }
+    .modal__boton{
+        position: absolute;
+        color: white;
+        top: 4px;
+        right: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background: #de423a;
+        text-align: center;
+        font-size: 1.2em;
+        border-radius: 50%;
+font-family: monospace;
+    }
+    
+    .modal__open{
+display: block;
+    }
+
+    .producto #c-slider{
+        top: 170px;
+    }
+    .producto .principal{
+    position: relative;
+    top: 30px;
+}
+
+@media(min-width:400px){
+    .producto .principal{
+        margin-bottom: 50px;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
